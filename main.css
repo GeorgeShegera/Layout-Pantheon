@@ -35,16 +35,17 @@ body {
   background-position: left 20% center;
 }
 
-.header {
+.navbar {
+  width: 100%;
   padding: 30px;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  flex-direction: row;
 }
 
 .logo {
   width: 170px;
-  display: inline-block;
 }
 
 .telephone-number {
@@ -74,24 +75,33 @@ body {
   color: #fff;
 }
 
-.navbar {
+.navbar-collapse {
   min-width: 495px;
+  flex-grow: 0;
+}
+
+.nav-item:last-child {
+  display: none;
+}
+
+.navbar-toggler {
+  border: none;
 }
 
 /*##################################### Media Queries #####################################*/
 @media (max-width: 950px) {
-  .navbar {
+  .navbar-collapse {
     margin: 30px 4%;
-    display: inline-block;
     order: 1;
     flex-grow: 1;
+    max-width: none;
   }
   .navbar-nav {
     justify-content: space-around;
   }
 }
 @media (max-width: 690px) {
-  .navbar {
+  .navbar-collapse {
     margin: 30px 0px;
   }
   .navbar-nav {
@@ -100,16 +110,42 @@ body {
 }
 
 @media (max-width: 575px) {
-  .header {
-    flex-direction: row;
+  header {
+    background: -webkit-linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.85) 0%,
+      rgba(0, 0, 0, 0.8075) 100%
+    );
+    backdrop-filter: blur(5px);
   }
-  .navbar {
+
+  .navbar-collapse {
     min-width: 0;
     flex-grow: 0;
     margin: 0;
+    /* position: relative; */
   }
 
   .telephone-number {
     display: none !important;
+  }
+
+  .navbar-nav {
+    padding-top: 30px;
+    /* position: absolute; */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .nav-item:last-child {
+    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .nav-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
