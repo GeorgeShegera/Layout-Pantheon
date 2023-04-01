@@ -1,1 +1,115 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+
+/*##################################### Default Styles #####################################*/
+*,
+*:before,
+*:after {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  background-color: #333;
+  font-family: "Montserrat", sans-serif !important;
+  color: #fff;
+  font-size: 20px;
+}
+
+/*##################################### Header Section #####################################*/
+
+.fullscreen__body {
+  height: 100vh;
+  background-image: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.9) 0%,
+      rgba(0, 0, 0, 0.1) 100%,
+      rgba(0, 0, 0, 0.4) 100%
+    ),
+    url(imgs/HeaderImgs/HeadBackGround.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: left 20% center;
+}
+
+.header {
+  padding: 30px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.logo {
+  width: 170px;
+  display: inline-block;
+}
+
+.telephone-number {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  transition-duration: 0.5s;
+}
+
+.nav-item > a:hover,
+.telephone-number:hover {
+  color: #f38f31;
+}
+
+.navbar-nav {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.nav-item > a {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  color: #fff;
+}
+
+.navbar {
+  min-width: 495px;
+}
+
+/*##################################### Media Queries #####################################*/
+@media (max-width: 950px) {
+  .navbar {
+    margin: 30px 4%;
+    display: inline-block;
+    order: 1;
+    flex-grow: 1;
+  }
+  .navbar-nav {
+    justify-content: space-around;
+  }
+}
+@media (max-width: 690px) {
+  .navbar {
+    margin: 30px 0px;
+  }
+  .navbar-nav {
+    justify-content: space-between;
+  }
+}
+
+@media (max-width: 575px) {
+  .header {
+    flex-direction: row;
+  }
+  .navbar {
+    min-width: 0;
+    flex-grow: 0;
+    margin: 0;
+  }
+
+  .telephone-number {
+    display: none !important;
+  }
+}
