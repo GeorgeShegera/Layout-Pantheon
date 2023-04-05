@@ -15,14 +15,18 @@
   </head>
   <body>
     <section class="container-fuild">
+      <div class="decor-blocks__top">
+        <div class="decor-block__top-line"></div>
+        <div class="decor-block__top-orange"></div>
+      </div>
       <div class="fullscreen__body">
         <header>
           <nav class="navbar container-xxl navbar-expand-sm">
-            <div class="logo">
+            <div class="logo d-flex justify-content-sm-center">
               <img src="imgs/HeaderImgs/Logo.png" alt="Logo" />
             </div>
             <button
-              class="navbar-toggler p-0"
+              class="navbar-toggler p-0 collapsed"
               type="button"
               data-bs-toggle="collapse"
               data-bs-target="#navbarSupportedContent"
@@ -30,7 +34,9 @@
               aria-expanded="false"
               aria-label="Toggle navigation"
             >
-              <span class="navbar-toggler-icon"></span>
+              <span class="toggler-icon top-bar"></span>
+              <span class="toggler-icon middle-bar"></span>
+              <span class="toggler-icon bottom-bar"></span>
             </button>
             <div
               class="collapse col-6 navbar-collapse"
@@ -63,6 +69,11 @@
           </nav>
         </header>
       </div>
+      <div class="decor-blocks__left">
+        <div class="decor-bottom-block decor-block__left-orange"></div>
+        <div class="decor-bottom-block decor-block__left-black"></div>
+        <div class="decor-bottom-block decor-block__left-line"></div>
+      </div>
     </section>
     <section>
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos unde totam
@@ -82,5 +93,6 @@
       integrity="sha384-heAjqF+bCxXpCWLa6Zhcp4fu20XoNIA98ecBC1YkdXhszjoejr5y9Q77hIrv8R9i"
       crossorigin="anonymous"
     ></script>
+    <script src="main.js"></script>
   </body>
 </html>
