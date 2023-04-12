@@ -28,7 +28,8 @@ h3,
 h4,
 h5,
 h6,
-p {
+p,
+ul {
   padding: 0;
   margin: 0;
   border: 0;
@@ -217,7 +218,7 @@ header {
 
 /*##################################### Header Content #####################################*/
 .header-content {
-  margin-top: 150px;
+  margin-top: 200px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -343,8 +344,7 @@ header {
   }
 }
 /*##################################### Main Section #####################################*/
-
-main {
+.info-section {
   background-color: #0c1417;
   flex-direction: column;
   align-items: center;
@@ -353,7 +353,7 @@ main {
 }
 
 /*##################################### Life Way Section #####################################*/
-.wrapper {
+.life-way-wrapper {
   width: 100%;
   display: flex;
   height: 100%;
@@ -367,9 +367,6 @@ main {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  /* margin-top: 100px; */
-  /* height: 100%;
-  max-height: 472px; */
   max-width: 1172px;
   width: 100%;
   height: 100%;
@@ -389,7 +386,6 @@ main {
   width: 100%;
   position: relative;
   z-index: 10;
-  /* filter: drop-shadow(0px 4px 50px rgba(0, 0, 0, 0.5)); */
 }
 
 .life-way-imgs img:last-child {
@@ -428,17 +424,87 @@ main {
   opacity: 1;
 }
 
+/*##################################### Advantages Section #####################################*/
+.advantages-sect {
+  margin-top: 100px;
+}
+
+.adv-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 28px;
+  list-style: none;
+  flex-wrap: wrap;
+}
+
+.adv-list li {
+  display: flex;
+  justify-content: space-between;
+  width: 25%;
+}
+.adv-list img {
+  display: block;
+}
+.advantage-text {
+  padding-top: 3px;
+  width: 72%;
+}
+
+.adv-list li:nth-child(1) div {
+  max-width: 225px;
+}
+.adv-list li:nth-child(2) div {
+  max-width: 195px;
+}
+.adv-list li:nth-child(3) div {
+  max-width: 232px;
+}
+.adv-list li:nth-child(4) div {
+  max-width: 191px;
+}
+
+.adv-list li:nth-child(1) {
+  max-width: 319px;
+}
+.adv-list li:nth-child(2) {
+  max-width: 281px;
+}
+.adv-list li:nth-child(3) {
+  max-width: 318px;
+}
+.adv-list li:nth-child(4) {
+  max-width: 276px;
+}
 /*##################################### Media Queries #####################################*/
+@media (max-height: 700px) {
+  .fullscreen__body .header-content {
+    margin-top: 50px;
+  }
+}
+@media (max-width: 1320px) {
+  .adv-list li {
+    flex-direction: column;
+    align-items: center;
+    width: 24%;
+    justify-content: normal;
+  }
+  .advantage-text {
+    margin-top: 15px;
+    text-align: center;
+    padding: 0;
+    width: 100%;
+  }
+}
 
 @media (max-width: 1250px) {
-  /* .life-way-imgs {
-    max-width: 600px;
-  } */
   .life-way-imgs img {
     width: 45%;
   }
   .life-way-content {
-    margin-left: 20px;
+    margin-left: 50px;
     min-width: 368px;
   }
 }
@@ -501,12 +567,12 @@ main {
   }
 
   .header-content {
-    margin-top: 70px;
+    margin-top: 100px;
   }
 }
 
 @media (max-width: 850px) {
-  .wrapper {
+  .life-way-wrapper {
     max-height: none;
     height: auto;
   }
@@ -539,6 +605,22 @@ main {
   .life-way-imgs img {
     max-width: 353px;
     max-height: 496px;
+  }
+
+  .adv-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .adv-list li {
+    width: 100%;
+    max-width: none !important;
+  }
+  .advantage-text {
+    width: 100%;
+  }
+  .adv-list li:nth-child(3),
+  .adv-list li:nth-child(4) {
+    margin-top: 70px;
   }
 }
 
@@ -646,7 +728,7 @@ main {
     padding: 10px 10px;
   }
 
-  .wrapper {
+  .life-way-wrapper {
     margin-top: 72px;
   }
   .life-way-content {
@@ -659,6 +741,10 @@ main {
   .life-way-content > p {
     font-size: 16px;
     line-height: 26px;
+  }
+
+  .advantage-text {
+    width: 90%;
   }
 }
 
@@ -674,6 +760,16 @@ main {
   }
   .life-way-imgs img:last-child {
     margin-top: 30px;
+  }
+
+  .advantage-text {
+    width: 100%;
+  }
+  .adv-list {
+    grid-template-columns: 1fr;
+  }
+  .adv-list li {
+    margin-top: 70px;
   }
 }
 
