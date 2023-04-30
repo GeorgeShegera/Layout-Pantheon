@@ -316,23 +316,19 @@ header {
 
 .header-icons {
   width: 80px;
-  max-height: 22px;
   justify-content: space-around;
   align-items: center;
   margin-right: 4%;
 }
 
 .header-icon {
+  font-size: 24px;
   cursor: pointer;
   transition: 0.3s;
 }
 .header-icon:hover {
+  color: #f7931e;
   transform: scale(1.2);
-}
-
-.vk-icon {
-  max-width: 30px;
-  max-height: 17px;
 }
 
 @keyframes arrow-animation {
@@ -349,7 +345,7 @@ header {
   flex-direction: column;
   align-items: center;
   padding-bottom: 100px;
-  height: 10000px;
+  height: auto;
 }
 
 /*##################################### Life Way Section #####################################*/
@@ -494,7 +490,8 @@ header {
   text-align: center;
 }
 
-.wrapper {
+.swiper-gym-wrapper,
+.swiper-gallery-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -504,12 +501,16 @@ header {
   margin: 80px auto 0 auto;
   position: relative;
 }
+.swiper-gym-wrapper {
+  margin-top: 60px;
+}
 
 .gallary-wrapper {
   width: 100%;
   position: relative;
 }
 
+.gym,
 .gallary {
   display: flex;
   max-width: 1180px;
@@ -519,11 +520,14 @@ header {
   flex-direction: column;
   align-items: center;
 }
+
+.gym .swiper-wrapper,
 .gallary .swiper-wrapper {
   box-sizing: content-box;
 }
 
-.photo__slide {
+.photo__slide,
+.gym__slide {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -536,6 +540,13 @@ header {
   width: auto;
   height: auto;
   max-height: 375px;
+  user-select: none;
+}
+.gym__slide img {
+  max-width: 100%;
+  width: auto;
+  height: auto;
+  max-height: 300px;
   user-select: none;
 }
 
@@ -587,6 +598,7 @@ header {
 }
 
 .gallary-wrapper-scrollbar::before {
+  z-index: 1;
   content: "";
   max-width: 1000px;
   position: absolute;
@@ -607,6 +619,32 @@ header {
   top: 0;
   z-index: 2;
   position: relative;
+}
+
+.decor-block__info-sect {
+  position: absolute;
+  transform: skew(39deg) rotate(90deg);
+  transform-origin: 28px -19px;
+}
+.decor-block__info-orange {
+  background-color: #f7931e;
+  top: 92%;
+  left: 0;
+  width: 376.96px;
+  height: 55.89px;
+}
+.decor-block__info-white {
+  top: 95%;
+  left: 0;
+  width: 109.1px;
+  height: 34.46px;
+  border: 2px solid #ffffff;
+}
+/*##################################### Subscriptions #####################################*/
+.subscriptions-sect {
+  background-color: #fff;
+  width: 100%;
+  padding-bottom: 400px;
 }
 
 /*##################################### Media Queries #####################################*/
@@ -646,7 +684,8 @@ header {
     visibility: hidden;
   }
 
-  .gallary {
+  .gallary,
+  .gym {
     padding: 0 15px;
   }
 }
@@ -724,6 +763,10 @@ header {
 }
 
 @media (max-width: 850px) {
+  .info-section {
+    padding-bottom: 90px;
+  }
+
   .life-way-wrapper {
     max-height: none;
     height: auto;
@@ -775,7 +818,10 @@ header {
     margin-top: 70px;
   }
 
-  .wrapper {
+  .gallary-wrapper-scrollbar {
+    width: 75%;
+  }
+  .swiper-gallery-wrapper {
     margin-top: 60px;
   }
   .photo__slide img {
@@ -783,8 +829,16 @@ header {
     max-height: 430px;
     max-width: 308px;
   }
-  .gallary-wrapper-scrollbar {
-    width: 80%;
+  .gym__slide img {
+    width: 100%;
+    max-height: 350px;
+    max-width: 422px;
+  }
+  .decor-block__info-orange {
+    top: 93%;
+  }
+  .decor-block__info-white {
+    width: 140px;
   }
 }
 
@@ -917,6 +971,10 @@ header {
 }
 
 @media (max-width: 450px) {
+  .info-section {
+    padding-bottom: 80px;
+  }
+
   .life-way-imgs {
     flex-direction: column;
   }
@@ -949,6 +1007,18 @@ header {
   }
   .gallary-wrapper-scrollbar {
     width: 100%;
+  }
+  .swiper-gym-wrapper {
+    margin-top: 48px;
+  }
+  .decor-block__info-orange {
+    top: 97.7%;
+    height: 33.76px;
+  }
+  .decor-block__info-white {
+    height: 20.82px;
+    width: 80px;
+    top: 98.6%;
   }
 }
 

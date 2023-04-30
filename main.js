@@ -34,7 +34,7 @@ burderMenu.onclick = () => {
 };
 
 /*##################################### Carousel #####################################*/
-// Slider initialization
+// Sliders initialization
 const gallary = new Swiper(".gallary", {
   // Settings
   direction: "horizontal",
@@ -43,8 +43,6 @@ const gallary = new Swiper(".gallary", {
 
   scrollbar: {
     el: ".swiper-scrollbar",
-    draggable: true,
-    dragSize: 200,
     draggable: true,
   },
 
@@ -73,6 +71,52 @@ const gallary = new Swiper(".gallary", {
 
     0: {
       slidesPerView: 1.4,
+
+      scrollbar: {
+        dragSize: 70,
+      },
+    },
+  },
+});
+
+const gym = new Swiper(".gym", {
+  // Settings
+  direction: "horizontal",
+  speed: 800,
+
+  scrollbar: {
+    el: ".swiper-scrollbar",
+    draggable: true,
+  },
+
+  // Arrows
+  navigation: {
+    nextEl: ".btn-next",
+    prevEl: ".btn-prev",
+  },
+
+  breakpoints: {
+    850: {
+      spaceBetween: 38.3,
+      slidesPerView: 3,
+
+      scrollbar: {
+        dragSize: 200,
+      },
+    },
+
+    451: {
+      spaceBetween: 30,
+      slidesPerView: 1.7,
+
+      scrollbar: {
+        dragSize: 102,
+      },
+    },
+
+    0: {
+      spaceBetween: 30,
+      slidesPerView: 1.25,
 
       scrollbar: {
         dragSize: 70,
