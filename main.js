@@ -124,3 +124,56 @@ const gym = new Swiper(".gym", {
     },
   },
 });
+
+/*gym-memberships_swiper*/
+const gymMembershipsSwiper = new Swiper(".gym-memberships_swiper", {
+  // Settings
+  direction: "horizontal",
+  speed: 800,
+  loop: false,
+
+  scrollbar: {
+    el: ".gym-membership-scrollbar",
+    draggable: true,
+    dragSize: 402,
+  },
+
+  breakpoints: {
+    950: {
+      slidesPerView: 5,
+
+      scrollbar: {
+        enabled: false,
+      },
+    },
+
+    850: {
+      slidesPerView: 4,
+
+      scrollbar: {
+        dragSize: 402,
+      },
+    },
+
+    576: {
+      slidesPerView: 3,
+      scrollbar: {
+        dragSize: 202,
+      },
+    },
+
+    350: {
+      slidesPerView: 2,
+
+      scrollbar: {
+        dragSize: 102,
+      },
+    },
+    0: {
+      slidesPerView: 1.7,
+      scrollbar: {
+        dragSize: 70,
+      },
+    },
+  },
+});
