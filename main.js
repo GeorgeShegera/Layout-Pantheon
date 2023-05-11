@@ -34,7 +34,7 @@ burderMenu.onclick = () => {
 };
 
 /*##################################### Carousel #####################################*/
-// Sliders initialization
+// gallary swiper
 const gallary = new Swiper(".gallary", {
   // Settings
   direction: "horizontal",
@@ -79,6 +79,7 @@ const gallary = new Swiper(".gallary", {
   },
 });
 
+// gym swiper
 const gym = new Swiper(".gym", {
   // Settings
   direction: "horizontal",
@@ -125,7 +126,7 @@ const gym = new Swiper(".gym", {
   },
 });
 
-/*gym-memberships_swiper*/
+/*gym-memberships swiper*/
 const gymMembershipsSwiper = new Swiper(".gym-memberships_swiper", {
   // Settings
   direction: "horizontal",
@@ -136,14 +137,15 @@ const gymMembershipsSwiper = new Swiper(".gym-memberships_swiper", {
     el: ".gym-membership-scrollbar",
     draggable: true,
     dragSize: 402,
+    // enabled: true,
   },
 
   breakpoints: {
     950: {
       slidesPerView: 5,
 
-      scrollbar: {
-        enabled: false,
+      _scrollbar: {
+        // enabled: false,
       },
     },
 
@@ -173,7 +175,40 @@ const gymMembershipsSwiper = new Swiper(".gym-memberships_swiper", {
       slidesPerView: 1.7,
       scrollbar: {
         dragSize: 70,
+        // enabled: true,
       },
     },
   },
 });
+
+const membershipDurations = document.querySelectorAll(
+  ".gym-memberships_slide:not(:nth-child(1)) > .gym-membership-item:nth-child(1)"
+);
+const membershipKinds = document.querySelectorAll(
+  ".gym-memberships_slide:nth-child(1) > .gym-membership-item:not(:nth-child(1))"
+);
+const membershipPrices = Array.from(
+  document.querySelectorAll(
+    ".gym-memberships_slide:not(:nth-child(1)) > .gym-membership-item:not(:nth-child(1))"
+  )
+);
+tableHover(membershipPrices, membershipKinds, membershipDurations);
+
+function tableHover(centralElements, leftElements, topElements) {
+  centralElements.forEach((price) => {
+    const leftIndex = centralElements.indexOf(price) % leftElements.length;
+    const topIndex = parseInt(
+      centralElements.indexOf(price) / leftElements.length
+    );
+
+    price.onmouseover = price.onmouseout = () => {
+      itemToggle(price);
+      itemToggle(leftElements[leftIndex]);
+      itemToggle(topElements[topIndex]);
+
+      function itemToggle(item) {
+        item.classList.toggle("gym-membership-item__hover");
+      }
+    };
+  });
+}

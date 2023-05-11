@@ -694,6 +694,7 @@ header {
   grid: 0.4fr repeat(3, 1fr) / 100%;
 }
 .gym-membership-item {
+  max-width: 249px;
   text-align: center;
   padding: 15px 25px;
   user-select: none;
@@ -703,13 +704,19 @@ header {
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
+  transition: color 0.3s ease;
 }
+.gym-membership-item__hover {
+  color: #f7931e;
+}
+
 .gym-membership-item:nth-child(1) {
   font-weight: 700;
   padding: 25px 0;
   font-size: 18px;
   border-bottom: 1px solid rgba(12, 20, 23, 0.5);
   padding-bottom: 15px;
+  max-width: none;
 }
 .gym-memberships_slide:nth-child(1) > .gym-membership-item:nth-child(1) {
   padding-left: 4px;
