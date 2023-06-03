@@ -791,6 +791,122 @@ header {
   line-height: 30px;
   text-align: center;
 }
+
+/*##################################### One-time Workouts #####################################*/
+.onetime-workouts-title {
+  margin-top: 80px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  text-align: center;
+}
+.one-time-workouts__wrapper {
+  display: flex;
+  margin-top: 60px;
+  justify-content: center;
+  column-gap: 30px;
+  align-items: stretch;
+}
+.one-time-workout__block {
+  background: #ffffff;
+  box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.08);
+  flex: 0 1 308px;
+  padding: 30px 14px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #0c1417;
+}
+.one-time-workout__block > p:nth-of-type(1) {
+  transition: all 0.3s ease;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  flex: 1 1 auto;
+}
+.one-time-workout__block > p:nth-of-type(2) {
+  text-align: center;
+  margin-top: 20px;
+  color: rgba(12, 20, 23, 0.5);
+  font-size: 15px;
+  line-height: 20px;
+}
+.one-time-workout__block > img {
+  margin-top: 30px;
+  align-self: center;
+}
+
+.one-time-workout__block > p:nth-of-type(3) {
+  margin-top: 15px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+}
+.one-time-workout__block > p:nth-of-type(4) {
+  margin-top: 15px;
+  text-align: center;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 20px;
+  color: rgba(12, 20, 23, 0.5);
+}
+.learn-more_btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  max-width: 220px;
+  z-index: 3;
+  background: #ffffff;
+  width: 85%;
+  height: 50px;
+  text-decoration: none;
+  position: relative;
+  align-self: center;
+}
+.learn-more_btn::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  display: block;
+  content: "";
+  transform: skewX(-20deg);
+  width: 100%;
+  height: 100%;
+  border: 1px solid #f7931e;
+}
+.learn-more_btn > p {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: #f7931e;
+  transition: all none;
+}
+.learn-more_btn > span {
+  z-index: -1;
+  transition: all 0.3s ease;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  transform: skewX(-20deg) translate(-10px, 8px);
+  background-color: #f7931e;
+}
+.learn-more_btn:hover > span {
+  transform: skewX(-20deg) translate(0px, 0px);
+}
+.learn-more_btn:hover > p {
+  color: #ffffff;
+}
+.learn-more_btn:hover ~ .one-time-workout__block > p:nth-of-type(1) {
+  color: #f7931e;
+}
 /*##################################### Media Queries #####################################*/
 @media (max-height: 700px) {
   .fullscreen__body .header-content {
@@ -847,6 +963,8 @@ header {
     margin-left: 50px;
     min-width: 368px;
   }
+}
+@media (max-width: 1019px) {
 }
 
 @media (max-width: 950px) {
@@ -1009,10 +1127,19 @@ header {
   }
 }
 
-@media (max-width: 805px) {
+@media (max-width: 830px) {
   .header-content h1 {
     font-size: 58px;
     line-height: 68px;
+  }
+
+  .one-time-workouts__wrapper {
+    gap: 15px;
+  }
+
+  .learn-more_btn,
+  .one-time-workout__block > img {
+    margin-top: 10px;
   }
 }
 
@@ -1036,6 +1163,14 @@ header {
 
   .life-way-imgs {
     margin-top: 40px;
+  }
+}
+
+@media (max-width: 650px) {
+  .one-time-workouts__wrapper {
+    flex-direction: column;
+    max-width: 400px;
+    gap: 30px;
   }
 }
 

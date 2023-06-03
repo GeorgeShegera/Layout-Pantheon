@@ -202,7 +202,6 @@ const membershipByTimeCentral = Array.from(
 );
 
 tableHover(membershipByTimeCentral, membershipByTimeLeft, membershipByTimeTop);
-console.log(membershipByTimeTop, membershipByTimeLeft, membershipByTimeCentral);
 
 function tableHover(centralElements, leftElements, topElements) {
   centralElements.forEach((price) => {
@@ -270,3 +269,18 @@ new Swiper(".time-memberships_swiper", {
     },
   },
 });
+
+/**/
+const workoutBlockHeaders = document.querySelectorAll(
+  ".one-time-workout__block > p:nth-of-type(1)"
+);
+const workoutBlockButtons = document.querySelectorAll(".learn-more_btn");
+
+for (let i = 0; i < workoutBlockButtons.length; i++) {
+  workoutBlockButtons[i].addEventListener("mouseover", () => {
+    workoutBlockHeaders[i].style.color = "#f7931e";
+  });
+  workoutBlockButtons[i].addEventListener("mouseout", () => {
+    workoutBlockHeaders[i].style.color = "#0C1417";
+  });
+}
