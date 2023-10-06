@@ -1,3 +1,4 @@
+
 /*##################################### Header Links style #####################################*/
 let navs = document.querySelectorAll(".nav-link");
 
@@ -23,14 +24,6 @@ const burderMenu = document.querySelector(".navbar-toggler");
 
 burderMenu.onclick = () => {
   const mediaQuery = window.matchMedia("(max-height: 700px)");
-  // if (!mediaQuery.matches) {
-  //   headerContent.style.marginTop = "50px";
-  // } else if (
-  //   burderMenu.classList.contains("collapsed") &&
-  //   window.getComputedStyle(burderMenu).display != "none"
-  // ) {
-  //   headerContent.style.marginTop = "50px";
-  // } else headerContent.style.marginTop = "0px";
 };
 
 /*##################################### Carousel #####################################*/
@@ -270,7 +263,7 @@ new Swiper(".time-memberships_swiper", {
   },
 });
 
-/**/
+/*One-time workout hover*/
 const workoutBlockHeaders = document.querySelectorAll(
   ".one-time-workout__block > p:nth-of-type(1)"
 );
@@ -284,3 +277,36 @@ for (let i = 0; i < workoutBlockButtons.length; i++) {
     workoutBlockHeaders[i].style.color = "#0C1417";
   });
 }
+
+/* coaches swiper */
+new Swiper(".coaches-swiper", {
+  settings: "horizontal",
+  speed: 1000,
+  loop: false,
+  spaceBetween: 30,
+
+  scrollbar: {
+    el: ".coaches-scrollbar",
+    draggable: true,
+    dragSize: 102,
+  },
+  navigation: {
+    nextEl: ".coaches-swiper__ar-right",
+    prevEl: ".coaches-swiper__ar-left",
+  },
+
+  breakpoints: {
+    850: {
+      slidesPerView: 3.3,
+    },
+    450: {
+      slidesPerView: 2.3,
+    },
+    0: {
+      slidesPerView: 1.3,
+      scrollbar: {
+        dragSize: 70,
+      },
+    },
+  },
+});

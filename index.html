@@ -1,432 +1,491 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta
-      name="viewport"
-      content="width=device-width, device-height, initial-scale=1.0"
-    />
-    <title>Pantheon</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp"
-      crossorigin="anonymous"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-    />
-    <link rel="stylesheet" href="main.css" />
-  </head>
-  <body>
-    <section class="container-fuild">
-      <div class="decor-blocks__top">
-        <div class="decor-block__top-line"></div>
-        <div class="decor-block__top-orange"></div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, device-height, initial-scale=1.0" />
+  <title>Pantheon</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="main.css" />
+</head>
+
+<body>
+  <section class="container-fuild">
+    <div class="decor-blocks__top">
+      <div class="decor-block__top-line"></div>
+      <div class="decor-block__top-orange"></div>
+    </div>
+    <div class="fullscreen__body">
+      <header>
+        <nav class="navbar container-xxl navbar-expand-sm">
+          <div class="logo d-flex justify-content-sm-center">
+            <img src="imgs/HeaderImgs/Logo.png" alt="Logo" />
+          </div>
+          <button class="navbar-toggler p-0 collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="toggler-icon top-bar"></span>
+            <span class="toggler-icon middle-bar"></span>
+            <span class="toggler-icon bottom-bar"></span>
+          </button>
+          <div class="collapse col-6 navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav container-fuild">
+              <li class="nav-item">
+                <a class="nav-link" href="#">О нас</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Галерея </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Абонементы</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Тренеры</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Контакты</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">+38(068)345-67-89</a>
+              </li>
+            </ul>
+          </div>
+          <a class="telephone-number link d-flex align-self-center" href="#">
+            +38(068)345-67-89</a>
+        </nav>
+      </header>
+      <div class="container-lg d-flex justify-content-center p-1">
+        <div class="header-content">
+          <h1>Фитнес клуб Пантеон</h1>
+          <h2>Лучше нас только боги</h2>
+          <button class="get-consult-btn">
+            <p>Получить консультацию</p>
+            <span></span>
+          </button>
+        </div>
       </div>
-      <div class="fullscreen__body">
-        <header>
-          <nav class="navbar container-xxl navbar-expand-sm">
-            <div class="logo d-flex justify-content-sm-center">
-              <img src="imgs/HeaderImgs/Logo.png" alt="Logo" />
-            </div>
-            <button
-              class="navbar-toggler p-0 collapsed"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#navbarSupportedContent"
-              aria-controls="navbarSupportedContent"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
-              <span class="toggler-icon top-bar"></span>
-              <span class="toggler-icon middle-bar"></span>
-              <span class="toggler-icon bottom-bar"></span>
-            </button>
-            <div
-              class="collapse col-6 navbar-collapse"
-              id="navbarSupportedContent"
-            >
-              <ul class="navbar-nav container-fuild">
-                <li class="nav-item">
-                  <a class="nav-link" href="#">О нас</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Галерея </a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Абонементы</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Тренеры</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Контакты</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">+38(068)345-67-89</a>
-                </li>
-              </ul>
-            </div>
-            <a class="telephone-number link d-flex align-self-center" href="#">
-              +38(068)345-67-89</a
-            >
-          </nav>
-        </header>
-        <div class="container-lg d-flex justify-content-center p-1">
-          <div class="header-content">
-            <h1>Фитнес клуб Пантеон</h1>
-            <h2>Лучше нас только боги</h2>
-            <button class="get-consult-btn">
+      <div class="header-bottom d-flex w-100 justify-content-end align-items-center">
+        <div class="arrow-bottom h-100">
+          <a class="d-block h-100" href="#main"><img src="imgs/HeaderImgs/ArrowBottom.png" alt="bottom" /></a>
+        </div>
+        <div class="header-icons d-flex">
+          <i class="fa-brands fa-instagram header-icon"></i>
+          <i class="fa-brands fa-facebook header-icon"></i>
+        </div>
+      </div>
+    </div>
+    <div class="decor-blocks__left">
+      <div class="decor-bottom-block decor-block__left-orange"></div>
+      <div class="decor-bottom-block decor-block__left-black"></div>
+      <div class="decor-bottom-block decor-block__left-line"></div>
+    </div>
+  </section>
+  <main class="container-fuild" id="main">
+    <section class="info-section">
+      <div class="life-way-wrapper">
+        <section class="life-way-sect col-11" id="about-section">
+          <div class="life-way-imgs d-flex">
+            <img src="imgs/LifeWayImgs/life-way-1.png" alt="" />
+            <img src="imgs/LifeWayImgs/life-way-2.png" alt="" />
+          </div>
+          <div class="life-way-content">
+            <h2>Новый образ жизни</h2>
+            <p>
+              Став частью нашей команды, вы сможете изменить привычный ритм
+              жизни и сделать каждый свой день особенным, а формат наших
+              тренировок позволит вам раскрыть потенциал вашего тела на 100%.
+            </p>
+            <button class="get-consult-btn btn-no-bg btn-new-life">
               <p>Получить консультацию</p>
               <span></span>
             </button>
           </div>
-        </div>
-        <div
-          class="header-bottom d-flex w-100 justify-content-end align-items-center"
-        >
-          <div class="arrow-bottom h-100">
-            <a class="d-block h-100" href="#main"
-              ><img src="imgs/HeaderImgs/ArrowBottom.png" alt="bottom"
-            /></a>
+        </section>
+      </div>
+      <div class="advantages-sect container-xxl">
+        <ul class="adv-list">
+          <li>
+            <img src="imgs/AdvantagesImgs/stationary-bike.png" alt="stationary-bike" />
+            <div class="advantage-text">Полностью укомплектованный зал</div>
+          </li>
+          <li>
+            <img src="imgs/AdvantagesImgs/dumbbell.png" alt="dumbbell" />
+            <div class="advantage-text">Профессиональное оборудование</div>
+          </li>
+          <li>
+            <img src="imgs/AdvantagesImgs/location.png" alt="location" />
+            <div class="advantage-text">
+              Удобное расположение в центре города
+            </div>
+          </li>
+          <li>
+            <img src="imgs/AdvantagesImgs/wallet.png" alt="wallet" />
+            <div class="advantage-text">Доступная стоимость занятий</div>
+          </li>
+        </ul>
+      </div>
+      <div class="gallery-section">
+        <h3>Галерея</h3>
+        <div class="swiper-gallery-wrapper">
+          <!--Slider-->
+          <div class="gallary">
+            <div class="swiper-wrapper">
+              <div class="photo__slide swiper-slide">
+                <img src="imgs/GalleryImgs/People/img1.png" alt="Picture" />
+              </div>
+              <div class="photo__slide swiper-slide">
+                <img src="imgs/GalleryImgs/People/img2.png" alt="Picture" />
+              </div>
+              <div class="photo__slide swiper-slide">
+                <img src="imgs/GalleryImgs/People/img3.png" alt="Picture" />
+              </div>
+              <div class="photo__slide swiper-slide">
+                <img src="imgs/GalleryImgs/People/img4.png" alt="Picture" />
+              </div>
+              <div class="photo__slide swiper-slide">
+                <img src="imgs/GalleryImgs/People/img1.png" alt="Picture" />
+              </div>
+              <div class="photo__slide swiper-slide">
+                <img src="imgs/GalleryImgs/People/img2.png" alt="Picture" />
+              </div>
+              <div class="photo__slide swiper-slide">
+                <img src="imgs/GalleryImgs/People/img3.png" alt="Picture" />
+              </div>
+              <div class="photo__slide swiper-slide">
+                <img src="imgs/GalleryImgs/People/img4.png" alt="Picture" />
+              </div>
+              <div class="photo__slide swiper-slide">
+                <img src="imgs/GalleryImgs/People/img1.png" alt="Picture" />
+              </div>
+              <div class="photo__slide swiper-slide">
+                <img src="imgs/GalleryImgs/People/img2.png" alt="Picture" />
+              </div>
+              <div class="photo__slide swiper-slide">
+                <img src="imgs/GalleryImgs/People/img3.png" alt="Picture" />
+              </div>
+              <div class="photo__slide swiper-slide">
+                <img src="imgs/GalleryImgs/People/img4.png" alt="Picture" />
+              </div>
+              <div class="photo__slide swiper-slide">
+                <img src="imgs/GalleryImgs/People/img1.png" alt="Picture" />
+              </div>
+              <div class="photo__slide swiper-slide">
+                <img src="imgs/GalleryImgs/People/img2.png" alt="Picture" />
+              </div>
+            </div>
+            <!-- Arrows -->
+            <i class="fa-solid fa-arrow-left-long btn-prev"></i>
+            <i class="fa-solid fa-arrow-right-long btn-next"></i>
+            <div class="gallary-wrapper-scrollbar">
+              <div class="swiper-scrollbar gallary-scrollbar"></div>
+            </div>
           </div>
-          <div class="header-icons d-flex">
-            <i class="fa-brands fa-instagram header-icon"></i>
-            <i class="fa-brands fa-facebook header-icon"></i>
+        </div>
+        <div class="swiper-gym-wrapper">
+          <!--Slider-->
+          <div class="gym">
+            <div class="swiper-wrapper">
+              <div class="gym__slide swiper-slide">
+                <img src="imgs/GalleryImgs/Gym/gym1.png" alt="Picture" />
+              </div>
+              <div class="gym__slide swiper-slide">
+                <img src="imgs/GalleryImgs/Gym/gym2.png" alt="Picture" />
+              </div>
+              <div class="gym__slide swiper-slide">
+                <img src="imgs/GalleryImgs/Gym/gym3.png" alt="Picture" />
+              </div>
+              <div class="gym__slide swiper-slide">
+                <img src="imgs/GalleryImgs/Gym/gym1.png" alt="Picture" />
+              </div>
+              <div class="gym__slide swiper-slide">
+                <img src="imgs/GalleryImgs/Gym/gym2.png" alt="Picture" />
+              </div>
+              <div class="gym__slide swiper-slide">
+                <img src="imgs/GalleryImgs/Gym/gym3.png" alt="Picture" />
+              </div>
+              <div class="gym__slide swiper-slide">
+                <img src="imgs/GalleryImgs/Gym/gym1.png" alt="Picture" />
+              </div>
+              <div class="gym__slide swiper-slide">
+                <img src="imgs/GalleryImgs/Gym/gym2.png" alt="Picture" />
+              </div>
+              <div class="gym__slide swiper-slide">
+                <img src="imgs/GalleryImgs/Gym/gym3.png" alt="Picture" />
+              </div>
+              <div class="gym__slide swiper-slide">
+                <img src="imgs/GalleryImgs/Gym/gym1.png" alt="Picture" />
+              </div>
+              <div class="gym__slide swiper-slide">
+                <img src="imgs/GalleryImgs/Gym/gym2.png" alt="Picture" />
+              </div>
+              <div class="gym__slide swiper-slide">
+                <img src="imgs/GalleryImgs/Gym/gym3.png" alt="Picture" />
+              </div>
+              <div class="gym__slide swiper-slide">
+                <img src="imgs/GalleryImgs/Gym/gym1.png" alt="Picture" />
+              </div>
+              <div class="gym__slide swiper-slide">
+                <img src="imgs/GalleryImgs/Gym/gym2.png" alt="Picture" />
+              </div>
+            </div>
+            <!-- Arrows -->
+            <i class="fa-solid fa-arrow-left-long btn-prev"></i>
+            <i class="fa-solid fa-arrow-right-long btn-next"></i>
+            <div class="gallary-wrapper-scrollbar">
+              <div class="swiper-scrollbar gallary-scrollbar"></div>
+            </div>
           </div>
         </div>
       </div>
-      <div class="decor-blocks__left">
-        <div class="decor-bottom-block decor-block__left-orange"></div>
-        <div class="decor-bottom-block decor-block__left-black"></div>
-        <div class="decor-bottom-block decor-block__left-line"></div>
+      <div class="decor-blocks__info-sect">
+        <div class="decor-block__info-sect decor-block__info-orange"></div>
+        <div class="decor-block__info-sect decor-block__info-white"></div>
       </div>
     </section>
-    <main class="container-fuild" id="main">
-      <section class="info-section">
-        <div class="life-way-wrapper">
-          <section class="life-way-sect col-11" id="about-section">
-            <div class="life-way-imgs d-flex">
-              <img src="imgs/LifeWayImgs/life-way-1.png" alt="" />
-              <img src="imgs/LifeWayImgs/life-way-2.png" alt="" />
-            </div>
-            <div class="life-way-content">
-              <h2>Новый образ жизни</h2>
-              <p>
-                Став частью нашей команды, вы сможете изменить привычный ритм
-                жизни и сделать каждый свой день особенным, а формат наших
-                тренировок позволит вам раскрыть потенциал вашего тела на 100%.
-              </p>
-              <button class="get-consult-btn btn-no-bg btn-new-life">
-                <p>Получить консультацию</p>
-                <span></span>
-              </button>
-            </div>
-          </section>
-        </div>
-        <div class="advantages-sect container-xxl">
-          <ul class="adv-list">
-            <li>
-              <img
-                src="imgs/AdvantagesImgs/stationary-bike.png"
-                alt="stationary-bike"
-              />
-              <div class="advantage-text">Полностью укомплектованный зал</div>
-            </li>
-            <li>
-              <img src="imgs/AdvantagesImgs/dumbbell.png" alt="dumbbell" />
-              <div class="advantage-text">Профессиональное оборудование</div>
-            </li>
-            <li>
-              <img src="imgs/AdvantagesImgs/location.png" alt="location" />
-              <div class="advantage-text">
-                Удобное расположение в центре города
+    <section class="subscriptions-sect">
+      <div class="subscriptions container-xxl">
+        <h2 class="membership_header">Абонементы</h2>
+        <div class="gym-memberships-wrapper">
+          <!--Slider-->
+          <div class="gym-memberships_swiper">
+            <div class="swiper-wrapper gym-memberships_columns">
+              <div class="gym-memberships_slide swiper-slide">
+                <div class="gym-membership-item">Кол-во занятий</div>
+                <div class="gym-membership-item">
+                  Персональный тренинг с инструктором
+                </div>
+                <div class="gym-membership-item">
+                  Самостоятельные тренировки в тренажерном зале
+                </div>
+                <div class="gym-membership-item">Зал групповых программ</div>
               </div>
-            </li>
-            <li>
-              <img src="imgs/AdvantagesImgs/wallet.png" alt="wallet" />
-              <div class="advantage-text">Доступная стоимость занятий</div>
-            </li>
-          </ul>
-        </div>
-        <div class="gallery-section">
-          <h3>Галерея</h3>
-          <div class="swiper-gallery-wrapper">
-            <!--Slider-->
-            <div class="gallary">
-              <div class="swiper-wrapper">
-                <div class="photo__slide swiper-slide">
-                  <img src="imgs/GalleryImgs/People/img1.png" alt="Picture" />
+              <div class="gym-memberships_slide swiper-slide">
+                <div class="gym-membership-item">1 тренировка</div>
+                <div class="gym-membership-item">700 грн.</div>
+                <div class="gym-membership-item">250 грн.</div>
+                <div class="gym-membership-item">300 грн.</div>
+              </div>
+              <div class="gym-memberships_slide swiper-slide">
+                <div class="gym-membership-item">4 тренировки</div>
+                <div class="gym-membership-item">
+                  2600 грн. (действителен в течении 3 недель)
                 </div>
-                <div class="photo__slide swiper-slide">
-                  <img src="imgs/GalleryImgs/People/img2.png" alt="Picture" />
+                <div class="gym-membership-item">—</div>
+                <div class="gym-membership-item">—</div>
+              </div>
+              <div class="gym-memberships_slide swiper-slide">
+                <div class="gym-membership-item">8 тренировков</div>
+                <div class="gym-membership-item">
+                  5200 грн. (действителен в течении 6 недель)
                 </div>
-                <div class="photo__slide swiper-slide">
-                  <img src="imgs/GalleryImgs/People/img3.png" alt="Picture" />
+                <div class="gym-membership-item">
+                  1500 грн. (действителен в течении 30 дней)
                 </div>
-                <div class="photo__slide swiper-slide">
-                  <img src="imgs/GalleryImgs/People/img4.png" alt="Picture" />
-                </div>
-                <div class="photo__slide swiper-slide">
-                  <img src="imgs/GalleryImgs/People/img1.png" alt="Picture" />
-                </div>
-                <div class="photo__slide swiper-slide">
-                  <img src="imgs/GalleryImgs/People/img2.png" alt="Picture" />
-                </div>
-                <div class="photo__slide swiper-slide">
-                  <img src="imgs/GalleryImgs/People/img3.png" alt="Picture" />
-                </div>
-                <div class="photo__slide swiper-slide">
-                  <img src="imgs/GalleryImgs/People/img4.png" alt="Picture" />
-                </div>
-                <div class="photo__slide swiper-slide">
-                  <img src="imgs/GalleryImgs/People/img1.png" alt="Picture" />
-                </div>
-                <div class="photo__slide swiper-slide">
-                  <img src="imgs/GalleryImgs/People/img2.png" alt="Picture" />
-                </div>
-                <div class="photo__slide swiper-slide">
-                  <img src="imgs/GalleryImgs/People/img3.png" alt="Picture" />
-                </div>
-                <div class="photo__slide swiper-slide">
-                  <img src="imgs/GalleryImgs/People/img4.png" alt="Picture" />
-                </div>
-                <div class="photo__slide swiper-slide">
-                  <img src="imgs/GalleryImgs/People/img1.png" alt="Picture" />
-                </div>
-                <div class="photo__slide swiper-slide">
-                  <img src="imgs/GalleryImgs/People/img2.png" alt="Picture" />
+                <div class="gym-membership-item">
+                  2000 грн. (действителен в течении 30 дней)
                 </div>
               </div>
-              <!-- Arrows -->
-              <i class="fa-solid fa-arrow-left-long btn-prev"></i>
-              <i class="fa-solid fa-arrow-right-long btn-next"></i>
-              <div class="gallary-wrapper-scrollbar">
-                <div class="swiper-scrollbar gallary-scrollbar"></div>
+              <div class="gym-memberships_slide swiper-slide">
+                <div class="gym-membership-item">12 тренировков</div>
+                <div class="gym-membership-item">
+                  7200 грн. (действителен в течении 10 недель)
+                </div>
+                <div class="gym-membership-item">
+                  2000 грн. (действителен в течении 30 дней)
+                </div>
+                <div class="gym-membership-item">
+                  2750 грн. (действителен в течении 45 дней)
+                </div>
               </div>
             </div>
-          </div>
-          <div class="swiper-gym-wrapper">
-            <!--Slider-->
-            <div class="gym">
-              <div class="swiper-wrapper">
-                <div class="gym__slide swiper-slide">
-                  <img src="imgs/GalleryImgs/Gym/gym1.png" alt="Picture" />
-                </div>
-                <div class="gym__slide swiper-slide">
-                  <img src="imgs/GalleryImgs/Gym/gym2.png" alt="Picture" />
-                </div>
-                <div class="gym__slide swiper-slide">
-                  <img src="imgs/GalleryImgs/Gym/gym3.png" alt="Picture" />
-                </div>
-                <div class="gym__slide swiper-slide">
-                  <img src="imgs/GalleryImgs/Gym/gym1.png" alt="Picture" />
-                </div>
-                <div class="gym__slide swiper-slide">
-                  <img src="imgs/GalleryImgs/Gym/gym2.png" alt="Picture" />
-                </div>
-                <div class="gym__slide swiper-slide">
-                  <img src="imgs/GalleryImgs/Gym/gym3.png" alt="Picture" />
-                </div>
-                <div class="gym__slide swiper-slide">
-                  <img src="imgs/GalleryImgs/Gym/gym1.png" alt="Picture" />
-                </div>
-                <div class="gym__slide swiper-slide">
-                  <img src="imgs/GalleryImgs/Gym/gym2.png" alt="Picture" />
-                </div>
-                <div class="gym__slide swiper-slide">
-                  <img src="imgs/GalleryImgs/Gym/gym3.png" alt="Picture" />
-                </div>
-                <div class="gym__slide swiper-slide">
-                  <img src="imgs/GalleryImgs/Gym/gym1.png" alt="Picture" />
-                </div>
-                <div class="gym__slide swiper-slide">
-                  <img src="imgs/GalleryImgs/Gym/gym2.png" alt="Picture" />
-                </div>
-                <div class="gym__slide swiper-slide">
-                  <img src="imgs/GalleryImgs/Gym/gym3.png" alt="Picture" />
-                </div>
-                <div class="gym__slide swiper-slide">
-                  <img src="imgs/GalleryImgs/Gym/gym1.png" alt="Picture" />
-                </div>
-                <div class="gym__slide swiper-slide">
-                  <img src="imgs/GalleryImgs/Gym/gym2.png" alt="Picture" />
-                </div>
-              </div>
-              <!-- Arrows -->
-              <i class="fa-solid fa-arrow-left-long btn-prev"></i>
-              <i class="fa-solid fa-arrow-right-long btn-next"></i>
-              <div class="gallary-wrapper-scrollbar">
-                <div class="swiper-scrollbar gallary-scrollbar"></div>
-              </div>
+            <div class="gym-membership__wrapper-scrollbar">
+              <div class="swiper-scrollbar gym-membership-scrollbar"></div>
             </div>
           </div>
         </div>
-        <div class="decor-blocks__info-sect">
-          <div class="decor-block__info-sect decor-block__info-orange"></div>
-          <div class="decor-block__info-sect decor-block__info-white"></div>
+        <div class="decor-blocks__subscriptions">
+          <div class="decor-top-block__subscriptions decor-top-orange"></div>
+          <div class="decor-top-block__subscriptions decor-top-black"></div>
+          <div class="decor-top-block__subscriptions decor-top-transparent"></div>
         </div>
-      </section>
-      <section class="subscriptions-sect">
-        <div class="subscriptions container-xxl">
-          <h2 class="membership_header">Абонементы</h2>
-          <div class="gym-memberships-wrapper">
-            <!--Slider-->
-            <div class="gym-memberships_swiper">
-              <div class="swiper-wrapper gym-memberships_columns">
-                <div class="gym-memberships_slide swiper-slide">
-                  <div class="gym-membership-item">Кол-во занятий</div>
-                  <div class="gym-membership-item">
-                    Персональный тренинг с инструктором
-                  </div>
-                  <div class="gym-membership-item">
-                    Самостоятельные тренировки в тренажерном зале
-                  </div>
-                  <div class="gym-membership-item">Зал групповых программ</div>
+
+        <h2 class="time-membership__header">Абонемент по времени</h2>
+        <div class="time-memberships-wrapper">
+          <!--Slider-->
+          <div class="time-memberships_swiper">
+            <div class="swiper-wrapper time-memberships_columns">
+              <div class="time-memberships_slide swiper-slide">
+                <div class="time-membership-item">Тип карты</div>
+                <div class="time-membership-item">
+                  Индивидуальная, полная без ограничения в посещении / 8:00 –
+                  23:00
                 </div>
-                <div class="gym-memberships_slide swiper-slide">
-                  <div class="gym-membership-item">1 тренировка</div>
-                  <div class="gym-membership-item">700 грн.</div>
-                  <div class="gym-membership-item">250 грн.</div>
-                  <div class="gym-membership-item">300 грн.</div>
-                </div>
-                <div class="gym-memberships_slide swiper-slide">
-                  <div class="gym-membership-item">4 тренировки</div>
-                  <div class="gym-membership-item">
-                    2600 грн. (действителен в течении 3 недель)
-                  </div>
-                  <div class="gym-membership-item">—</div>
-                  <div class="gym-membership-item">—</div>
-                </div>
-                <div class="gym-memberships_slide swiper-slide">
-                  <div class="gym-membership-item">8 тренировков</div>
-                  <div class="gym-membership-item">
-                    5200 грн. (действителен в течении 6 недель)
-                  </div>
-                  <div class="gym-membership-item">
-                    1500 грн. (действителен в течении 30 дней)
-                  </div>
-                  <div class="gym-membership-item">
-                    2000 грн. (действителен в течении 30 дней)
-                  </div>
-                </div>
-                <div class="gym-memberships_slide swiper-slide">
-                  <div class="gym-membership-item">12 тренировков</div>
-                  <div class="gym-membership-item">
-                    7200 грн. (действителен в течении 10 недель)
-                  </div>
-                  <div class="gym-membership-item">
-                    2000 грн. (действителен в течении 30 дней)
-                  </div>
-                  <div class="gym-membership-item">
-                    2750 грн. (действителен в течении 45 дней)
-                  </div>
+                <div class="time-membership-item">
+                  Индивидуальная, дневная / 8:00 – 17:00
                 </div>
               </div>
-              <div class="gym-membership__wrapper-scrollbar">
-                <div class="swiper-scrollbar gym-membership-scrollbar"></div>
+              <div class="time-memberships_slide swiper-slide">
+                <div class="time-membership-item">12 месяцев</div>
+                <div class="time-membership-item">
+                  18000 <br />
+                  (+200 мин. солярия)
+                </div>
+                <div class="time-membership-item">—</div>
+              </div>
+              <div class="time-memberships_slide swiper-slide">
+                <div class="time-membership-item">6 месяцев</div>
+                <div class="time-membership-item">12000</div>
+                <div class="time-membership-item">9500</div>
+              </div>
+              <div class="time-memberships_slide swiper-slide">
+                <div class="time-membership-item">3 месяца</div>
+                <div class="time-membership-item">7000</div>
+                <div class="time-membership-item">5500</div>
+              </div>
+              <div class="time-memberships_slide swiper-slide">
+                <div class="time-membership-item">1 месяц</div>
+                <div class="time-membership-item">2500</div>
+                <div class="time-membership-item">2000</div>
               </div>
             </div>
-          </div>
-          <h2 class="time-membership__header">Абонемент по времени</h2>
-          <div class="time-memberships-wrapper">
-            <!--Slider-->
-            <div class="time-memberships_swiper">
-              <div class="swiper-wrapper time-memberships_columns">
-                <div class="time-memberships_slide swiper-slide">
-                  <div class="time-membership-item">Тип карты</div>
-                  <div class="time-membership-item">
-                    Индивидуальная, полная без ограничения в посещении / 8:00 –
-                    23:00
-                  </div>
-                  <div class="time-membership-item">
-                    Индивидуальная, дневная / 8:00 – 17:00
-                  </div>
-                </div>
-                <div class="time-memberships_slide swiper-slide">
-                  <div class="time-membership-item">12 месяцев</div>
-                  <div class="time-membership-item">
-                    18000 <br />
-                    (+200 мин. солярия)
-                  </div>
-                  <div class="time-membership-item">—</div>
-                </div>
-                <div class="time-memberships_slide swiper-slide">
-                  <div class="time-membership-item">6 месяцев</div>
-                  <div class="time-membership-item">12000</div>
-                  <div class="time-membership-item">9500</div>
-                </div>
-                <div class="time-memberships_slide swiper-slide">
-                  <div class="time-membership-item">3 месяца</div>
-                  <div class="time-membership-item">7000</div>
-                  <div class="time-membership-item">5500</div>
-                </div>
-                <div class="time-memberships_slide swiper-slide">
-                  <div class="time-membership-item">1 месяц</div>
-                  <div class="time-membership-item">2500</div>
-                  <div class="time-membership-item">2000</div>
-                </div>
-              </div>
-              <div class="gym-membership__wrapper-scrollbar">
-                <div class="swiper-scrollbar gym-membership-scrollbar"></div>
-              </div>
-            </div>
-          </div>
-          <h3 class="onetime-workouts-title">Разовые тренировки</h3>
-          <div class="one-time-workouts__wrapper">
-            <div class="one-time-workout__block">
-              <p>Самостоятельные тренировки в тренажерном зале</p>
-              <p>8:00 – 23:00</p>
-              <img src="imgs/SubscriptionsImgs/Clock.png" alt="Clock" />
-              <p>250₴</p>
-              <p>1 тренировка</p>
-              <a class="learn-more_btn btn-no-bg" href="#">
-                <p>Узнать</p>
-                <span></span>
-              </a>
-            </div>
-            <div class="one-time-workout__block">
-              <p>Персональный тренинг с инструктором</p>
-              <p>8:00 – 23:00</p>
-              <img src="imgs/SubscriptionsImgs/Clock.png" alt="Clock " />
-              <p>700₴</p>
-              <p>1 тренировка</p>
-              <a class="learn-more_btn btn-no-bg" href="#">
-                <p>Узнать</p>
-                <span></span>
-              </a>
-            </div>
-            <div class="one-time-workout__block">
-              <p>
-                Зал групповых <br />
-                программ
-              </p>
-              <p>график занятий уточняйте у администратора</p>
-              <img src="imgs/SubscriptionsImgs/Clock.png" alt="Clock " />
-              <p>300₴</p>
-              <p>1 тренировка</p>
-              <a class="learn-more_btn btn-no-bg" href="#">
-                <p>Узнать</p>
-                <span></span>
-              </a>
+
+            <div class="gym-membership__wrapper-scrollbar">
+              <div class="swiper-scrollbar gym-membership-scrollbar"></div>
             </div>
           </div>
         </div>
-      </section>
-    </main>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.min.js"
-      integrity="sha384-heAjqF+bCxXpCWLa6Zhcp4fu20XoNIA98ecBC1YkdXhszjoejr5y9Q77hIrv8R9i"
-      crossorigin="anonymous"
-    ></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-    <script src="main.js"></script>
-  </body>
+        <div class="decor-blocks__subscriptions">
+          <div class="decor-bot-block__subscriptions decor-bot-transparent"></div>
+          <div class="decor-bot-block__subscriptions decor-bot-black"></div>
+        </div>
+        <h3 class="onetime-workouts-title">Разовые тренировки</h3>
+        <div class="one-time-workouts__wrapper">
+          <div class="one-time-workout__block">
+            <p>Самостоятельные тренировки в тренажерном зале</p>
+            <p>8:00 – 23:00</p>
+            <img src="imgs/SubscriptionsImgs/Clock.png" alt="Clock" />
+            <p>250₴</p>
+            <p>1 тренировка</p>
+            <a class="learn-more_btn btn-no-bg" href="#">
+              <p>Узнать</p>
+              <span></span>
+            </a>
+          </div>
+          <div class="one-time-workout__block">
+            <p>Персональный тренинг с инструктором</p>
+            <p>8:00 – 23:00</p>
+            <img src="imgs/SubscriptionsImgs/Clock.png" alt="Clock " />
+            <p>700₴</p>
+            <p>1 тренировка</p>
+            <a class="learn-more_btn btn-no-bg" href="#">
+              <p>Узнать</p>
+              <span></span>
+            </a>
+          </div>
+          <div class="one-time-workout__block">
+            <p>
+              Зал групповых <br />
+              программ
+            </p>
+            <p>график занятий уточняйте у администратора</p>
+            <img src="imgs/SubscriptionsImgs/Clock.png" alt="Clock " />
+            <p>300₴</p>
+            <p>1 тренировка</p>
+            <a class="learn-more_btn btn-no-bg" href="#">
+              <p>Узнать</p>
+              <span></span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="coaches-section d-flex justify-content-center">
+      <div class="">
+        <div class="decor-block__coaches decor-block__coaches-orange"></div>
+        <div class="decor-block__coaches decor-block__coaches-transparent"></div>
+      </div>
+      <div class="coaches-sect__content d-flex">
+        <h3 class="coaches-title">Тренеры</h3>
+        <div class="swiper-container coaches-swiper">
+          <div class="swiper-wrapper coaches-swiper__wrapper">
+            <div class="swiper-slide coach-slide">
+              <img src="imgs/Coaches/Coach1.png" alt="" />
+              <h4>Илья Панченко</h4>
+              <p>Персональный тренер</p>
+              <p>Инструктор тренажерного зала</p>
+              <p>Опыт работы — 4 года</p>
+            </div>
+            <div class="coach-slide swiper-slide">
+              <img src="imgs/Coaches/Coach2.png" alt="" />
+              <h4>Екатерина Сосина-Нуньес</h4>
+              <p>Фитнес-тренер</p>
+              <p>Опыт работы — 4 года</p>
+            </div>
+            <div class="coach-slide swiper-slide">
+              <img src="imgs/Coaches/Coach3.png" alt="" />
+              <h4>Юлия Белова</h4>
+              <p>Фитнес-тренер</p>
+              <p>Опыт работы — 4 года</p>
+            </div>
+            <div class="swiper-slide coach-slide">
+              <img src="imgs/Coaches/Coach1.png" alt="" />
+              <h4>Илья Панченко</h4>
+              <p>Персональный тренер</p>
+              <p>Инструктор тренажерного зала</p>
+              <p>Опыт работы — 4 года</p>
+            </div>
+            <div class="coach-slide swiper-slide">
+              <img src="imgs/Coaches/Coach2.png" alt="" />
+              <h4>Екатерина Сосина-Нуньес</h4>
+              <p>Фитнес-тренер</p>
+              <p>Опыт работы — 4 года</p>
+            </div>
+            <div class="coach-slide swiper-slide">
+              <img src="imgs/Coaches/Coach3.png" alt="" />
+              <h4>Юлия Белова</h4>
+              <p>Фитнес-тренер</p>
+              <p>Опыт работы — 4 года</p>
+            </div>
+            <div class="swiper-slide coach-slide">
+              <img src="imgs/Coaches/Coach1.png" alt="" />
+              <h4>Илья Панченко</h4>
+              <p>Персональный тренер</p>
+              <p>Инструктор тренажерного зала</p>
+              <p>Опыт работы — 4 года</p>
+            </div>
+            <div class="coach-slide swiper-slide">
+              <img src="imgs/Coaches/Coach2.png" alt="" />
+              <h4>Екатерина Сосина-Нуньес</h4>
+              <p>Фитнес-тренер</p>
+              <p>Опыт работы — 4 года</p>
+            </div>
+            <div class="coach-slide swiper-slide">
+              <img src="imgs/Coaches/Coach3.png" alt="" />
+              <h4>Юлия Белова</h4>
+              <p>Фитнес-тренер</p>
+              <p>Опыт работы — 4 года</p>
+            </div>
+          </div>
+          <div class="coaches-swiper__arrows">
+            <i class="fa-solid fa-arrow-left-long coaches-swiper__ar-left"></i>
+            <i class="fa-solid fa-arrow-right-long coaches-swiper__ar-right"></i>
+          </div>
+          <div class="coaches-wrapper-scrollbar">
+            <div class="coaches-scrollbar"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.min.js"
+    integrity="sha384-heAjqF+bCxXpCWLa6Zhcp4fu20XoNIA98ecBC1YkdXhszjoejr5y9Q77hIrv8R9i"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <script src="main.js"></script>
+</body>
+
 </html>
