@@ -3,7 +3,7 @@
 /*##################################### Default Styles #####################################*/
 
 html,
-body {  
+body {
   height: 100%;
   background-color: #333;
   font-family: "Montserrat", sans-serif !important;
@@ -959,27 +959,25 @@ header {
   background: rgba(12, 20, 23, 0.9);
 }
 
-
 /*##################################### Coaches Section#####################################*/
 .decor-block__coaches {
   position: absolute;
   transform: skew(39deg) rotate(90deg);
 }
-.decor-block__coaches-orange{
+.decor-block__coaches-orange {
   width: 15%;
   height: 36.54px;
   left: -110px;
   top: 88px;
   background-color: #f7931e;
 }
-.decor-block__coaches-transparent{
+.decor-block__coaches-transparent {
   width: 13%;
   height: 34.46px;
   left: -112px;
   top: 88px;
-  border: 2px solid #FFFFFF;
+  border: 2px solid #ffffff;
 }
-
 
 .coaches-section {
   padding: 100px 0;
@@ -1103,6 +1101,105 @@ header {
   z-index: 2;
   position: relative;
 }
+
+/*##################################### Form Section #####################################*/
+.form_section {
+  display: flex;
+  justify-content: center;
+  height: 600px;
+  background-image: url(imgs/FormImgs/form_background.png);
+  background-repeat: no-repeat, no-repeat;
+  background-size: cover, cover;
+  background-position: left 20% center, left top;
+}
+.form_section::before {
+  background-color: rgba(12, 20, 23, 0.4);
+  content: "";
+  display: block;
+  height: 100%;
+  position: absolute;
+  width: 100%;
+}
+.form_container {
+  padding: 0 15px;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  max-width: 1156px;
+}
+
+.questions_form {
+  z-index: 1;
+  background-color: transparent;
+  max-width: 351px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: rgba(255, 255, 255, 1);
+}
+
+.questions_form > h3 {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 30px;
+}
+
+.questions_form > p:nth-of-type(1) {
+  margin-top: 25px;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: center;
+}
+
+.questions_form > p:nth-of-type(1) > span {
+  color: rgba(247, 147, 30, 1);
+}
+
+.questions_form > input[type="text"] {
+  outline: none;
+  align-self: stretch;
+  background-color: transparent;
+  padding: 15px 3px;
+  border: none;
+  color: #ffffff;
+  border-bottom: 1px solid rgba(255, 255, 255, 1);
+  font-size: 15px;
+  transition: all 0.3s ease;
+}
+
+.questions_form > input[type="text"]::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.questions_form > input[type="text"]:focus {
+  border-color: #f7931e;
+}
+.questions_form > input[type="text"]:focus::placeholder {
+  color: #f7931e;
+}
+
+.questions_form > button {
+  margin-top: 30px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.input_name {
+  margin-top: 15px;
+}
+
+.questions_form > p:nth-of-type(2) {
+  margin-top: 20px;
+  color: rgba(255, 255, 255, 0.5);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+}
+
 /*##################################### Media Queries #####################################*/
 
 @media (max-height: 700px) {
@@ -1114,6 +1211,13 @@ header {
     padding-top: 15px;
     padding-inline-start: 15px;
   }
+}
+
+@media (min-width: 1500px) {
+  .decor-block__top-orange {
+    /* left: 66%; */
+  }
+  .decor-block__top-line;
 }
 
 @media (max-width: 1400px) {
@@ -1133,14 +1237,14 @@ header {
     left: 5px;
   }
 
-  .decor-block__coaches-orange{
-    width: 18%;    
-    top: 59px;    
+  .decor-block__coaches-orange {
+    width: 18%;
+    top: 59px;
   }
-  .decor-block__coaches-transparent{
-    width: 16%;        
-    top: 58px;    
-  }  
+  .decor-block__coaches-transparent {
+    width: 16%;
+    top: 58px;
+  }
 }
 
 @media (max-width: 1320px) {
@@ -1220,16 +1324,16 @@ header {
     width: 25%;
   }
 
-  .decor-block__coaches-orange{
-    width: 21%;    
+  .decor-block__coaches-orange {
+    width: 21%;
     top: 59px;
     height: 32.54px;
   }
-  .decor-block__coaches-transparent{
+  .decor-block__coaches-transparent {
     width: 19%;
-    top: 60px;   
+    top: 60px;
     height: 30.46px;
-  }  
+  }
 }
 @media (max-width: 1000px) {
   .life-way-imgs {
@@ -1327,14 +1431,14 @@ header {
     height: 46px;
   }
 
-  .decor-block__coaches-orange{
-    width: 24%;    
-    top: 59px;    
+  .decor-block__coaches-orange {
+    width: 24%;
+    top: 59px;
   }
-  .decor-block__coaches-transparent{
+  .decor-block__coaches-transparent {
     width: 22%;
-    top: 60px;       
-  }  
+    top: 60px;
+  }
 }
 @media (max-width: 888px) {
   .decor-bot-black {
@@ -1464,14 +1568,14 @@ header {
     margin-top: 5px;
   }
 
-  .decor-block__coaches-orange{
-    width: 34%;    
-    top: 84px;    
+  .decor-block__coaches-orange {
+    width: 34%;
+    top: 84px;
   }
-  .decor-block__coaches-transparent{
+  .decor-block__coaches-transparent {
     width: 30%;
-    top: 85px;       
-  }  
+    top: 85px;
+  }
 }
 @media (max-width: 849px) {
   .decor-bot-black {
@@ -1582,15 +1686,19 @@ header {
     margin-top: 45px;
   }
 
-  .decor-block__coaches-orange{
-    width: 38%;    
-    top: 100px;    
+  .decor-block__coaches-orange {
+    width: 38%;
+    top: 100px;
     height: 30.54px;
   }
-  .decor-block__coaches-transparent{
+  .decor-block__coaches-transparent {
     width: 34%;
-    top: 101px;      
-    height: 28.46px; 
+    top: 101px;
+    height: 28.46px;
+  }
+
+  .form_container {
+    justify-content: center;
   }
 }
 
@@ -1756,14 +1864,14 @@ header {
     top: 1030px;
   }
 
-  .decor-block__coaches-orange{
+  .decor-block__coaches-orange {
     width: 48%;
-    top: 88px;    
+    top: 88px;
   }
-  
-  .decor-block__coaches-transparent{
+
+  .decor-block__coaches-transparent {
     width: 43%;
-    top: 90px;    
+    top: 90px;
   }
 }
 
@@ -1842,6 +1950,13 @@ header {
   .coaches-section {
     padding: 80px 0;
   }
+
+  .questions_form > h3 {
+    font-size: 20px;
+  }
+  .questions_form > p:nth-of-type(1) {
+    font-size: 16px;
+  }
 }
 
 @media (max-width: 427px) {
@@ -1898,17 +2013,17 @@ header {
     display: none;
   }
 
-  .decor-block__coaches-orange{
+  .decor-block__coaches-orange {
     width: 48%;
-    top: 88px;    
+    top: 88px;
     height: 26.54px;
     min-width: 185px;
   }
-  
-  .decor-block__coaches-transparent{
+
+  .decor-block__coaches-transparent {
     width: 43%;
-    top: 90px; 
-    height: 24.46px;   
+    top: 90px;
+    height: 24.46px;
     min-width: 160px;
   }
 }
